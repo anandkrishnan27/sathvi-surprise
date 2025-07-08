@@ -4,43 +4,96 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Happy 6 Months!</title>
-  <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Open Sans', sans-serif;
+      background: #fff0f5 url('https://www.transparenttextures.com/patterns/flower.png');
+      background-size: cover;
+      color: #4b2e2e;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .page-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+      gap: 1rem;
+      padding: 2rem;
+    }
+
+    .photo-strip {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .photo-strip img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 3px solid #ffb6c1;
+      box-shadow: 0 0 6px rgba(214, 51, 132, 0.3);
+    }
+
+    .card-box {
+      background: white;
+      padding: 2rem;
+      max-width: 700px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(214, 51, 132, 0.3);
+    }
+
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3rem;
+      text-align: center;
+      color: #d63384;
+    }
+
+    .card-text {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      text-align: left;
+      margin-top: 1.5rem;
+    }
+  </style>
 </head>
 <body>
-  <div class="floral-border top"></div>
-  <div class="container">
-    <header>
-      <h1>💖 Happy 6 Months With You! 💖</h1>
-    </header>
+  <div class="page-wrapper">
+    <div class="photo-strip">
+      <img src="images/photo1.jpg" alt="Us 1">
+      <img src="images/photo2.jpg" alt="Us 2">
+      <img src="images/photo3.jpg" alt="Us 3">
+    </div>
 
-    <main>
-      <section class="card-text">
-        <p>
-          My love,
-        </p>
+    <div class="card-box">
+      <h1>💖 Happy 6 Months With You! 💖</h1>
+      <div class="card-text">
+        <p>My love,</p>
         <p>
           These six months with you have been more magical than I ever imagined. You've brought joy, peace,
           and so much laughter into my life. Every little moment with you — from quiet walks to silly texts
           — means the world to me. Here's to everything we've shared and all the adventures still to come. 💕
         </p>
         <p>
-          Forever yours,
-          <br>
+          Forever yours,<br>
           [Your Name]
         </p>
-      </section>
+      </div>
+    </div>
 
-      <aside class="photo-collage">
-        <img src="images/photo1.jpg" alt="Us 1">
-        <img src="images/photo2.jpg" alt="Us 2">
-        <img src="images/photo3.jpg" alt="Us 3">
-        <img src="images/photo4.jpg" alt="Us 4">
-        <img src="images/photo5.jpg" alt="Us 5">
-        <img src="images/photo6.jpg" alt="Us 6">
-      </aside>
-    </main>
+    <div class="photo-strip">
+      <img src="images/photo4.jpg" alt="Us 4">
+      <img src="images/photo5.jpg" alt="Us 5">
+      <img src="images/photo6.jpg" alt="Us 6">
+    </div>
   </div>
-  <div class="floral-border bottom"></div>
 </body>
 </html>
